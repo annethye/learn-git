@@ -53,8 +53,8 @@ Changes to be committed:
 
 ### 5. Make a commit.
 ```
-$ git commit -m "adding disclaimer, instructions and warranty"
-[master (root-commit) de7e290] adding disclaimer, instructions and warranty
+$ git commit -m "Adding disclaimer, instructions and warranty"
+[master (root-commit) de7e290] Adding disclaimer, instructions and warranty
  3 files changed, 70 insertions(+)
  create mode 100644 disclaimer.txt
  create mode 100644 instructions.txt
@@ -68,7 +68,7 @@ commit de7e2906a3cd9053a03578091eda8bfe4ae524d6
 Author: codecademy <ccuser@codecademy.com>
 Date:   Thu Jun 13 14:04:57 2024 +0000
 
-    adding disclaimer, instructions and warranty
+    Adding disclaimer, instructions and warranty
 ```
 ### 7. Include this line in disclaimer.txt:
 ![alt text](images/snapfit2.png)
@@ -100,7 +100,7 @@ commit de7e2906a3cd9053a03578091eda8bfe4ae524d6
 Author: codecademy <ccuser@codecademy.com>
 Date:   Thu Jun 13 14:04:57 2024 +0000
 
-    adding disclaimer, instructions and warranty
+    Adding disclaimer, instructions and warranty
 ```
 
 ### 11. Revise each file in whatever ways you’d like. Then add your changes to the staging area and make another commit.

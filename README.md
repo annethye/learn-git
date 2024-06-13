@@ -17,9 +17,11 @@
 - Project: [Ascii Portfolio](ascii_portfolio.md)
 
 ### Git Branching
-[Birthday Party](.md)
+- Project: [Birthday Party](birthday_party.md) 
+Editing a html file, creating branches for features, merging changes
 
-[Ruby Time Calculator](.md)
+- Project: [Ruby Time Calculator](ruby_time_calculator.md)
+Resolving merge conflicts 
 
 ### Git Teamwork
 [JavaScript Homework](.md)
@@ -32,3 +34,11 @@
 
 ### Collaborating with the GitHub Community
 [Portfolio]()
+
+
+
+## Course Review
+
+Very easy to follow
+Ended up with a througrough 
+A lot of overlapping articles, lessons and videos. A bit bloated

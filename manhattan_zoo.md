@@ -32,7 +32,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 $ git add meal-regimens.txt
 ```
 
-### 4. Make a commit
+### 4. Make a commit.
 ```
 $ git commit -m "adding meal-regimens.txt"
 [master (root-commit) ef14b66] adding meal-regimens.txt
@@ -48,7 +48,7 @@ $ git commit -m "adding meal-regimens.txt"
 $ git add meal-regimens.txt 
 ```
 
-### 7. Check the status of the Git project
+### 7. Check the status of the Git project.
 ```
 $ git status
 On branch master
