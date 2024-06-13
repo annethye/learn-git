@@ -4,7 +4,7 @@ In this project, you’ll use Git to keep track of meal guidelines for animals a
 
 This is the file we will be modifying and tracking
 
-![alt text](manhattan_zoo_1.png)
+![alt text](images/manhattan_zoo_1.png)
 
 ## 1. Initialize a new Git repository.
 ```
@@ -41,10 +41,9 @@ $ git commit -m "adding meal-regimens.txt"
 ```
 
 ### 5. Updating meal-regimens.txt.
-![alt text](manhattan_zoo_2.png)
+![alt text](images/manhattan_zoo_2.png)
 
-### 6.
-Add meal-regimens.txt to the staging area.
+### 6. Add meal-regimens.txt to the staging area.
 ```
 $ git add meal-regimens.txt 
 ```
@@ -80,7 +79,7 @@ Date:   Wed Jun 12 19:35:14 2024 +0000
     adding meal-regimens.txt
 ```
 ### 10.  Here’s two more animal reports. Include each in meal-regimens.txt, making a new commit for each animal added.
-![alt text](manhattan_zoo_3.png)
+![alt text](images/manhattan_zoo_3.png)
 
 After adding paragraph 4. and saving file
 ```
