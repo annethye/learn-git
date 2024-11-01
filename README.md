@@ -12,9 +12,9 @@
 
 
 ### Important Git Operations
-[Poem Fiasco](poem_fiasco.md)
+- Project: [Poem Fiasco](poem_fiasco.md)
 
-[Ascii Portfolio](ascii_portfolio.md)
+- Project: [Ascii Portfolio](ascii_portfolio.md)
 
 ### Git Branching
 [Birthday Party](.md)
