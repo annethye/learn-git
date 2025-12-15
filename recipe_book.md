@@ -19,11 +19,10 @@ $ cd veggie-favorites
 ### 2. Edit files, add and commit changes
 Inside veggie-favorites make a change to chili.txt and squash-lasagna.txt in the code editor.
 
-More chili powder should be added to two recipes, so the following line was added to chili.txt and squash-lasagna.txt
+More chili powder should be added to the two recipes, so the following line was added to chili.txt and squash-lasagna.txt and the file was saved.
 ```
 2 tbsp chili powder
 ```
-and the file was saved.
 
 Add changes to the Git staging area, and make a commit.
 ```
@@ -69,7 +68,7 @@ squash-lasagna.txt |  4 +++-
 This was a simple fast-forward merge.
 
 ### 6. Create new branch and switch to it
-Create a new branch, then switch over to it to work on new-recipe.txt. The recipe can be whatever dish you’d like.
+Create a new branch, then switch over to it, to work on new-recipe.txt. The recipe can be whatever dish you’d like.
 
 As we're working on a new recipe the new branch will be called new_recipe.
 ```
