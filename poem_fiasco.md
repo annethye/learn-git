@@ -1,17 +1,17 @@
 # Poem Fiasco
-Let’s get some practice with Git backtracking.
+Let's get some practice with Git backtracking.
 In this project, changes have been made to a series of poems and you want to change them back.
 
 They 3 poems are contained in the following files:
 - road-not-taken.txt
-- oven-bird.txt 
+- oven-bird.txt
 - fire-and-ice.txt
 
 ### 1. Discard changes to road-not-taken.txt
-The file road-not-taken.txt doesn’t look right at all! Perhaps a rival poet snuck in and changed it while you were getting coffee. Good thing you’ve been committing often.
+The file road-not-taken.txt doesn’t look right at all! Perhaps a rival poet snuck in and changed it while you were getting coffee. Good thing you've been committing often.
 
 Discard changes made to the working directory.
-```
+```bash
 $ git checkout HEAD road-not-taken.txt
 ```
 Now close and reopen the file. The following shows the before and after.
@@ -23,7 +23,7 @@ Now, finish the poem by adding the last line `And that has made all the differen
 
 ### 3. Discard changes to oven-bird.txt
 The file oven-bird.txt has also been tampered with. Let's discard the changes in the working directory again, using the shortcut `--` instead of `HEAD`.
-```
+```bash
 $ git checkout -- oven-bird.txt
 ```
 Now close and reopen the file. The following shows the before and after.
@@ -35,7 +35,7 @@ Now, finish the poem by adding the line `Is what to make of a diminished thing.`
 
 ### 5. Check if fire-and-ice.txt has been altered
 The file fire-and-ice.txt has not been altered, but just to be sure, check the difference between the working directory and the staging area.
-```
+```bash
 $ git diff fire-and-ice.txt
 ```
 This yields no output so there is none.
@@ -51,10 +51,10 @@ Below is the current state of the file:
 
 ### 6. Add files to staging area
 Now that you’ve restored and completed road-not-taken.txt and oven-bird.txt and added a line to fire-and-ice.txt, add all three of the files to the staging area.
-```
+```bash
 $ git add road-not-taken.txt oven-bird.txt fire-and-ice.txt
 ```
-```
+```bash
 $ git status
 On branch master
 Changes to be committed:
@@ -67,12 +67,12 @@ Changes to be committed:
 
 ### 7. Remove file from staging area
 The file fire-and-ice.txt could be better. Before you commit, remove this file from the staging area.
-```
+```bash
 $ git reset -- fire-and-ice.txt
 Unstaged changes after reset:
 M       fire-and-ice.txt
 ```
-```
+```bash
 $ git status
 On branch master
 Changes to be committed:
@@ -90,7 +90,7 @@ Changes not staged for commit:
 
 ### 8. Make a commit
 Now that you’ve removed fire-and-ice.txt, make a commit.
-```
+```bash
 $ git commit -m "Adding work to Oven Bird and Road Not Taken"
 [master 504c05b] Adding work to Oven Bird and Road Not Taken
  2 files changed, 2 insertions(+)
@@ -101,10 +101,10 @@ Suddenly you have decided you are unhappy with all poems. You therefore delete a
 
 ### 10. Add files to staging area
 Now add all three files to the staging area.
-```
+```bash
 $ git add -A
 ```
-```
+```bash
 $ git status
 On branch master
 Changes to be committed:
@@ -117,7 +117,7 @@ Changes to be committed:
 
 ### 11. Make a commit
 Commit all changes.
-```
+```bash
 $ git commit -m "Deleted all content"
 [master 177e70b] Deleted all content
  3 files changed, 50 deletions(-)
@@ -127,7 +127,7 @@ $ git commit -m "Deleted all content"
 
 ### 12. Reset your project
 A little later you take a look at the current state of your poems and regret your last commit. Reset your Git project to the commit before you made those drastic changes.
-```
+```bash
 $ git reset HEAD~1
 Unstaged changes after reset:
 M       fire-and-ice.txt
@@ -137,7 +137,7 @@ M       road-not-taken.txt
 We could also have found the first 7 characters of the SHA with `git log` and reverted to a specific commit.
 
 Let's check out the last commit in our log.
-```
+```bash
 $ git log -1
 commit 504c05b51a01ae3f8a02160ffd8b399b8db08318
 Author: codecademy <ccuser@codecademy.com>
@@ -149,7 +149,7 @@ Date:   Mon Jul 14 10:42:19 2025 +0000
 ### 13. Restore files to HEAD commit version
 There’s a problem. You reset HEAD to a previous commit, but the changes you want to get rid of are still in the working directory.
 Discard the changes to the working directory and restore the files to the way they look in the HEAD commit.
-```
+```bash
 $ git checkout -- fire-and-ice.txt oven-bird.txt road-not-taken.txt
 ```
 And our files have been restored.

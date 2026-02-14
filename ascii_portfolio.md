@@ -11,7 +11,7 @@ This project contains 3 files:
 
 ### 1. Discard changes to portrait.txt
 Let's look at our project status.
-```
+```bash
 $ git status
 On branch master
 Changes not staged for commit:
@@ -28,7 +28,7 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 Now let's see what has been commited.
-```
+```bash
 $ git log
 commit 8dd5126a5c0845d8e1d780706054903ac7721445
 Author: danasselin <johndoe@example.com>
@@ -81,7 +81,7 @@ November 12, 2014
 ```
 The ASCII face in portrait.txt had a goatee in the last commit, but it was deleted in the working directory.
 Taking a second look, you want the goatee back. Discard changes in the working directory.
-```
+```bash
 $ git checkout -- portrait.txt
 ```
 Close and reopen portrait.txt to see the result:
@@ -126,11 +126,12 @@ November 12, 2014
 ```
 
 ### 3. Add portrait.txt to staging area
-```
+```bash
 $ git add portrait.txt
 ```
+
 ### 4. Commit changes
-```
+```bash
 $ git commit -m "Adding eyebrows to portrait"
 [master 5b0de0a] Adding eyebrows to portrait
  1 file changed, 1 insertion(+), 1 deletion(-)
@@ -145,7 +146,7 @@ Remember to save all three files.
 
 ### 6. Add changes to staging area
 Next, add all your changes to the staging area with a single command.
-```
+```bash
 $ git add house.txt portrait.txt tree.txt
 $ git status
 On branch master
@@ -158,7 +159,7 @@ Changes to be committed:
 ```
 
 ### 7. Make a commit
-```
+```bash
 $ git commit -m "Correcting dates on all files"
 [master 147a46f] Correcting dates on all files
  3 files changed, 19 insertions(+), 2 deletions(-)
@@ -174,7 +175,7 @@ Save all three files again.
 
 ### 9. Add all files to staging area
 If you know you want to add every file in the working directory to the staging area, instead of adding each file individually, you can use a shortcut `.` meaning all files.
-```
+```bash
 $ git add .
 $ git status
 On branch master
@@ -188,7 +189,7 @@ Changes to be committed:
 
 ### 10. Unstage house.txt
 It turns out that house.txt is an experiment and doesn’t belong in the commit you’re staging. Reset the staging area to remove house.txt.
-```
+```bash
 $ git reset -- house.txt
 Unstaged changes after reset:
 M       house.txt
@@ -209,7 +210,7 @@ Changes not staged for commit:
 
 ### 11. Commit changes
 Now make a commit.
-```
+```bash
 $ git commit -m "Adding artist name to tree and portrait"
 [master f5adbdb] Adding artist name to tree and portrait
  2 files changed, 3 insertions(+), 1 deletion(-)
