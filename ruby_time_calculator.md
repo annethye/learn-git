@@ -1,14 +1,14 @@
 # Ruby Time Calculator 
-Merge conflicts are challenging even for expert Git users, so it’s good to get as much practice as possible with them.
+Merge conflicts are challenging even for expert Git users, so it's good to get as much practice as possible with them.
 
-In this project, you’ll have to resolve merge conflicts in two markdown files: README.md and examples.md
+In this project, you'll have to resolve merge conflicts in two markdown files: README.md and examples.md
 
 
 ### 1. Merge edits branch into master branch
 You are currently on master. Merge the edits branch into the master branch.
 
 This will create two merge conflicts: README.md and examples.md as seen below
-```
+```bash
 $ git merge edits
 Auto-merging examples.md
 CONFLICT (content): Merge conflict in examples.md
@@ -21,6 +21,7 @@ Automatic merge failed; fix conflicts and then commit the result.
 Using the file navigator, open README.md and identify the merge conflicts.
 
 As seen below in README.md Git has marked the HEAD version and added the edits version below.
+
 ```
 ## Famous speeches by technology advocates and contributors
 
@@ -44,14 +45,15 @@ This repository is a compilation of speeches and quotes from renowned technology
 Save file.
 
 ### 4. Add README.md to the staging area.
-```
+```bash
 $ git add README.md
 ```
 
 ### 5. Edit examples.md 
 Follow the same order of actions as above for examples.md: Keep the edits branch file changes and delete the HEAD changes.
 
-This is examples.md before any edits.
+This is examples.md before any edits:
+***
 ```
 <<<<<<< HEAD
 ## Grace Hopper
@@ -107,9 +109,13 @@ This is examples.md before any edits.
 > the process. I will not attempt to follow it further now.
 > ...
 > The new form of the problem can be described in terms of a game which we call the 'imitation game'.
-```
+```  
+***
 
-This is examples.md after edits.
+This is examples.md after edits:
+
+
+***
 ```
 ### Grace Hopper - Nanoseconds
 
@@ -148,17 +154,18 @@ This is examples.md after edits.
 > ...
 > The new form of the problem can be described in terms of a game which we call the 'imitation game'.
 ```
+***
 Save file.
 
 ### 6. Add examples.md to the staging area and make a commit
-```
+```bash
 $ git add examples.md
 $ git commit -m "Resolving merge conflict"
 [master 484ec2c] Resolving merge conflict
 ```
 
 ### 7. Delete the edits branch
-```
+```bash
 $ git branch -d edits
 Deleted branch edits (was 0dc9f6a).
 ```
