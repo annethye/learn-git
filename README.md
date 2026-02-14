@@ -21,16 +21,10 @@ This repository contains my solutions to the projects from the course [Learn Git
 
 ### Git Branching
 #### [Birthday Party](birthday_party.md) 
-> Working with a birthday invitation website, lists are added and headings enlarged. These changes are managed on several branches 
-
-
-Updating the site with lists and enlarging headings. 
-- Use Git to create and merge feature branches for a one-page birthday website. Update the page by swapping paragraphs for lists and enlarging headings. Clean up unused branches and merge approved changes back into master. A straightforward exercise in branching, committing, and merging.
-- shorter version: 
+> A project that practises Git branching by experimenting with multiple feature branches, making isolated changes to a one-page birthday invitation website, and merging approved updates back into the main branch using fast-forward merges to maintain a clean project history.
 
 #### [Ruby Time Calculator](ruby_time_calculator.md)
-- Practice resolving Git merge conflicts in two markdown files (README.md and examples.md). Merge the edits branch into master, manually pick changes from edits, remove conflict markers, stage, commit, and finally delete the edits branch. A practical drill in conflict resolution and clean commit history management. 
-- Resolve Git merge conflicts, manually edit conflicting files, stage and commit resolved changes, and manage branches.
+> A project that practises resolving Git merge conflicts in two markdown files by merging an edits branch into master, manually selecting the intended changes, removing conflict markers, staging and committing the resolution, and deleting the merged branch.
 
 ### Git Teamwork
 #### [JavaScript Homework](javascript_homework.md)
