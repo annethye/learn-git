@@ -1,26 +1,23 @@
 # Learn Git & GitHub
-
-
+This repository contains my solutions to the projects from the course [Learn Git and GitHub](https://www.codecademy.com/learn/learn-git) on codecademy.
 
 ### Introduction: Git & GitHub
 
 ### Basic Git Workflow
 #### [Manhattan Zoo](manhattan_zoo.md)
-
+> A project that demonstrates basic version control by tracking incremental updates to animal meal guidelines at the Manhattan Zoo, using Git to stage changes, create meaningful commits, and inspect project history.
 
 #### [SnapFit Robots, Inc.](snapfit_robots_inc.md)
-> solidifies core Git workflow skills: initializing a repo, tracking and staging files, making commits with clear messages, reviewing commit history, and iterating through edits. A practical exercise in basic version control essentials.
-Get hands-on with the foundational Git workflow: initialise a repo, add and stage multiple files, commit with meaningful messages, and review your commit history like a pro. You also practise updating files, staging incremental changes, and committing again — reinforcing the iterative nature of version control. A solid refresher that turns you into a confident Git navigator for any project.
+> A project that uses Git to track and manage changes to assembly instructions for Snap-Fit Robots Inc., demonstrating file staging, incremental commits, and version history across multiple documentation files.
 
 ##### [Link to Git Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)
 
-
 ### Important Git Operations
 #### [Poem Fiasco](poem_fiasco.md)
->
+> A project that practises Git backtracking by discarding unwanted working directory changes, selectively unstaging files, committing targeted fixes, and resetting to a previous commit to undo mistakes across multiple poem files.
 
 #### [Ascii Portfolio](ascii_portfolio.md)
->
+> A project that practises Git backtracking by restoring committed ASCII art, staging and committing incremental edits, updating metadata across multiple files, and selectively unstaging experimental changes before final commits.
 
 ### Git Branching
 #### [Birthday Party](birthday_party.md) 
