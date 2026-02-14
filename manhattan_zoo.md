@@ -4,16 +4,16 @@ In this project, you’ll use Git to keep track of meal guidelines for animals a
 
 This is the file we will be modifying and tracking
 
-![alt text](images/manhattan_zoo_1.png)
+![](images/manhattan_zoo_1.png)
 
-## 1. Initialize a new Git repository.
-```
+### 1. Initialize a new Git repository.
+```bash
 $ git init
 Initialized empty Git repository in /home/ccuser/workspace/manhattan-zoo-1/.git/
 ```
 
-## 2. Check the status of the repository.
-```
+### 2. Check the status of the repository.
+```bash
 $ git status
 On branch master
 
@@ -28,12 +28,12 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 ### 3. Add meal-regimens.txt to the staging area.
-```
+```bash
 $ git add meal-regimens.txt
 ```
 
 ### 4. Make a commit.
-```
+```bash
 $ git commit -m "adding meal-regimens.txt"
 [master (root-commit) ef14b66] adding meal-regimens.txt
  1 file changed, 14 insertions(+)
@@ -44,12 +44,12 @@ $ git commit -m "adding meal-regimens.txt"
 ![alt text](images/manhattan_zoo_2.png)
 
 ### 6. Add meal-regimens.txt to the staging area.
-```
+```bash
 $ git add meal-regimens.txt 
 ```
 
 ### 7. Check the status of the Git project.
-```
+```bash
 $ git status
 On branch master
 Changes to be committed:
@@ -57,14 +57,16 @@ Changes to be committed:
 
         modified:   meal-regimens.txt
 ```
+
 ### 8. Make a commit.
-```
+```bash
 $ git commit -m "meal-regimens.txt updated with 3rd paragraph"
 [master 1ebab32] meal-regimens.txt updated with 3rd paragraph
  1 file changed, 4 insertions(+)
 ```
+
 ### 9. View your Git commit history.
-```
+```bash
 $ git log
 commit 1ebab3257597009d7978a7531a4a08141c2e22b8
 Author: codecademy <ccuser@codecademy.com>
@@ -78,24 +80,26 @@ Date:   Wed Jun 12 19:35:14 2024 +0000
 
     adding meal-regimens.txt
 ```
-### 10.  Here’s two more animal reports. Include each in meal-regimens.txt, making a new commit for each animal added.
-![alt text](images/manhattan_zoo_3.png)
 
-After adding paragraph 4. and saving file
-```
+### 10.  Here’s two more animal reports. Include each in meal-regimens.txt, making a new commit for each animal added.
+![](images/manhattan_zoo_3.png)
+
+After adding paragraph 4. and saving file:
+```bash
 $ git add meal-regimens.txt 
 $ git commit -m "meal-regimens.txt updated with 4th paragraph"
 [master 7acadad] meal-regimens.txt updated with 4th paragraph
  1 file changed, 5 insertions(+)
 ```
 
-After adding paragraph 5. and saving file
-```
+After adding paragraph 5. and saving file:
+```bash
 $ git commit -m "meal-regimens.txt updated with 5th paragraph"
 [master 1aca9f0] meal-regimens.txt updated with 5th paragraph
  1 file changed, 6 insertions(+), 1 deletion(-)
 ```
-```
+
+```bash
 $ git log
 commit 1aca9f0d254fa930a8a9d4bedee7bd1dfb41db6d
 Author: codecademy <ccuser@codecademy.com>

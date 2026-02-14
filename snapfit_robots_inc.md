@@ -5,17 +5,17 @@ In this project, you will be working on assembly instructions for Snap-Fit Robot
 
 There are 3 files in the directory: disclaimer.txt, instructions.txt and warranty.txt. Below is a snapshot of discalimer.txt at the beginning of the project
 
-![alt text](images/snapfit1.png)
+![](images/snapfit1.png)
 
 ### 1. Initialize a new Git project.
-```
+```bash
 $ git init
 Initialized empty Git repository in /home/ccuser/workspace/snapfit-robots/.git/
 ```
 
 ### 2. Check the status of the Git project.
 You will see multiple files listed in the output as “Untracked”.
-```
+```bash
 $ git status
 On branch master
 
@@ -32,12 +32,12 @@ nothing added to commit but untracked files present (use "git add" to track)
 ```
 
 ### 3. Add each file to the Git staging area.
-```
+```bash
 $ git add disclaimer.txt instructions.txt warranty.txt 
 ```
 
 ### 4. Check the status of the Git project again.
-```
+```bash
 $ git status
 On branch master
 
@@ -52,7 +52,7 @@ Changes to be committed:
 ```
 
 ### 5. Make a commit.
-```
+```bash
 $ git commit -m "Adding disclaimer, instructions and warranty"
 [master (root-commit) de7e290] Adding disclaimer, instructions and warranty
  3 files changed, 70 insertions(+)
@@ -62,7 +62,7 @@ $ git commit -m "Adding disclaimer, instructions and warranty"
 ```
 
 ### 6. View your Git commit log.
-```
+```bash
 $ git log
 commit de7e2906a3cd9053a03578091eda8bfe4ae524d6
 Author: codecademy <ccuser@codecademy.com>
@@ -70,25 +70,26 @@ Date:   Thu Jun 13 14:04:57 2024 +0000
 
     Adding disclaimer, instructions and warranty
 ```
+
 ### 7. Include this line in disclaimer.txt:
-![alt text](images/snapfit2.png)
+![](images/snapfit2.png)
 
 and save disclaimer.txt
 
 ### 8. Add the file to the staging area.
-```
+```bash
 $ git add disclaimer.txt 
 ```
 
 ### 9. Now make a commit.
-```
+```bash
 $ git commit -m "Warning added to disclaimer file"
 [master 3335535] Warning added to disclaimer file
  1 file changed, 1 insertion(+), 1 deletion(-)
 ```
 
 ### 10. View your Git commit log again to identify your commit.
-```
+```bash
 $ git log
 commit 3335535c59fa55535ae22bae69c69feb040511f9
 Author: codecademy <ccuser@codecademy.com>
@@ -105,7 +106,7 @@ Date:   Thu Jun 13 14:04:57 2024 +0000
 
 ### 11. Revise each file in whatever ways you’d like. Then add your changes to the staging area and make another commit.
 Added voice command to instruction.txt and saved file.
-```
+```bash
 $ git add instructions.txt 
 $ git commit -m "Voice command added to instructions.txt"
 [master f5b2454] Voice command added to instructions.txt
